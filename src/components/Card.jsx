@@ -1,3 +1,5 @@
+// Card is where you create the properties and link the styling. 
+
 import React from "react";
 
 

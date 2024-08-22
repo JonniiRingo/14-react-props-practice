@@ -15,13 +15,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
-root.render(
-    <div>
-        <h1>My contacts</h1>
-        <App 
-            name = "contacts[0].name"
-            imgURL = "contacts[0].imgURL"
-            
-    </div>
-); 
+root.render(<App />); 
 
