@@ -1,20 +1,18 @@
 import React from "react";
+import contacts from "../commtacts";
 
 function App() {
   return (
-    <div>
+    <div className = "card">
       <h1 className="heading">My Contacts</h1>
       <div className="card">
         <div className="top">
-          <h2>Beyonce</h2>
-          <img
-            src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-            alt="avatar_img"
-          />
+          <h2 className = "name"> {contacts[0].name} </h2>
+          <img className = "circle-img" src = {contacts[0].imgURL}  alt="avatar_img" />
         </div>
         <div className="bottom">
-          <p>+123 456 789</p>
-          <p>b@beyonce.com</p>
+          <p className = "info"> {contacts[0].phone} </p> 
+          <p className = "info"> {contacts[0].email} </p>
         </div>
       </div>
     </div>
